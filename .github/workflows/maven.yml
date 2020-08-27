@@ -27,6 +27,7 @@ jobs:
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.2
       with:
+        target_branch: javadocs
         keep_history: true
         build_dir: target/apidocs
         committer: SamJakob <me@samjakob.com>
