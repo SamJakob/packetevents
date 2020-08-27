@@ -23,6 +23,8 @@ jobs:
       run: ls target/apidocs
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.2
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
       with:
         target_branch: javadocs
         keep_history: true
